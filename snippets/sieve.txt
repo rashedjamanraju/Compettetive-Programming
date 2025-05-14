@@ -1,4 +1,4 @@
-.<snippet>
+<snippet>
   <content><![CDATA[
 // Basic sieve to get primes up to sqrt(n)
 vector<int> sieve(int limit) {
