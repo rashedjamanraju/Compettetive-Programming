@@ -1,0 +1,28 @@
+.<snippet>
+  <content><![CDATA[
+// Basic sieve to get primes up to sqrt(n)
+vector<int> sieve(int limit) {
+    vector<bool> is_prime(limit + 1, true);
+    vector<int> primes;
+
+    is_prime[0] = is_prime[1] = false;
+
+    for (int i = 2; i * i <= limit; ++i) {
+        if (is_prime[i]) {
+            for (int j = i * i; j <= limit; j += i)
+                is_prime[j] = false;
+        }
+    }
+
+    for (int i = 2; i <= limit; ++i)
+        if (is_prime[i])
+            primes.push_back(i);
+
+    return primes;
+}
+]]></content>
+  <tabTrigger>sieve</tabTrigger>
+  <description>sieve</description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope >source.python</scope > -->
+</snippet>
