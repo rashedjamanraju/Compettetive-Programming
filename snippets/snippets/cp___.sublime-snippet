@@ -5,12 +5,57 @@ using namespace std;
 #define endl "\n"
 
 #define ll long long int
+#define ui unsigned int
+#define ul unsigned long int
+#define ull unsigned long long int
+#define sz size
+#define yes cout<<"YES"<<endl
+#define no cout<<"NO"<<endl
+
+//vector
+#define pb push_back
+#define popb pop_back
+#define all(v) (v).begin(), (v).end()
+
+//ordered map
+#define fi first
+#define se second
+
+//unordered map
+#define umap unordered_map
+#define ins insert
+
+//unordered set
+#define uset unordered_set
+#define ins insert
 
 
 // Function to calculate the ceiling of the division of two numbers
 int ceill(int a, int b) {
     return (a + b - 1) / b;
 }
+
+//  Binary Search Generalized
+// ==============================
+// bool isOk(){
+//     // implementation details
+//     // return 0/1
+// }
+
+// int bsg(vector<int>& v,int target){
+//     int start=0;
+//     int end=v.size();
+//     while(start<end){
+//         int mid=(start+end)/2;
+//         if(isOk(cutomize here)<=0){
+//             start=mid+1;
+//         }
+//         else{
+//             end=mid;
+//         }
+//     }
+//     return start-1;
+// }
 
 void solve() {
     // Example usage of ceill function
@@ -20,18 +65,18 @@ void solve() {
 int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(0);
-    
     int t = 0;
     cin >> t;
     while (t--) {
         solve();
+
     }
     return 0;
 }
 
 ]]></content>
   <tabTrigger>cp</tabTrigger>
-  <description>cp temp</description>
+  <description>cp</description>
   <!-- Optional: Set a scope to limit where the snippet will trigger -->
   <!-- <scope >source.python</scope > -->
 </snippet>
